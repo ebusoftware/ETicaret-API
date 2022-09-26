@@ -1,5 +1,7 @@
-﻿using ETicaretAPI.Domain.Entities;
+﻿using ETicaretAPI.Application.Repositories;
+using ETicaretAPI.Domain.Entities;
 using ETicaretAPI.Persistence.Contexts;
+using ETicaretAPI.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +20,14 @@ namespace ETicaretAPI.Persistence
         {
 
             //hangi veritabanıyla çalışacaksak onun kütüphanesini yüklüyoruz.
-            services.AddDbContext<ETicaretAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
+            services.AddDbContext<ETicaretAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString),ServiceLifetime.Singleton);
+            //IOC Conteiner ' da ICustomerReadRepository istendiğinde, CustomerReadRepository dönder.
+            services.AddSingleton<ICustomerReadRepository,CustomerReadRepository>();
+            services.AddSingleton<ICustomerWriteRepository,CustomerWriteRepository>();
+            services.AddSingleton<IOrderReadRepository,OrderReadRepository>();
+            services.AddSingleton<IOrderWriteRepository, OrderWriteRepository>();
+            services.AddSingleton<IProductReadRepository,ProductReadRepository>();
+            services.AddSingleton<IProductWriteRepository,ProductWriteRepository>();
         }
 
     }
