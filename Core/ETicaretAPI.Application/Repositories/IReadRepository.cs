@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Application.Repositories
 {
-    public interface IReadRepository<T> : IRepository<T> where T : BaseEntity //where yazarak iki türü de class türünde yaptık 
+    public interface IReadRepository<T> : IRepository<T> where T : BaseEntity //where yazarak iki türü de class türünde yaptık.
     {
 
-        IQueryable<T> GetAll();
-        IQueryable<T> GetWhere(Expression<Func<T, bool>> method);
-        Task<T> GetSingleAsync(Expression<Func<T,bool>>method);
-        Task<T> GetById(string id);
+        IQueryable<T> GetAll(bool tracking = true); //bool tracking = true ile gelecek olan datanın track edilip edilmeyeceğini ifade ediyoruz.
+        IQueryable<T> GetWhere(Expression<Func<T, bool>> method, bool tracking = true);
+        Task<T> GetSingleAsync(Expression<Func<T,bool>>method, bool tracking = true);
+        Task<T> GetByIdAsync(string id, bool tracking = true);
 
 
 
