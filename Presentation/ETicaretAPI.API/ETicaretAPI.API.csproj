@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\wwwroot\images\" />
+    <Folder Include="Properties\wwwroot\" />
   </ItemGroup>
 
 </Project>
