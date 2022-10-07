@@ -1,4 +1,5 @@
 using ETicaretAPI.Application.Validators;
+using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Infrastructure.Filters;
 using ETicaretAPI.Persistence;
 using FluentValidation.AspNetCore;
@@ -7,9 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddPersistenceService();
+builder.Services.AddInfrastructureServices();
 
 builder.Services.AddControllers(options => options.Filters.Add <ValidationFilter>())//kendi oluþturduðumuz filtreyi devreye sokuyoruz.
-    .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator> //Veei kontrolü içi ekledik.
+    .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator> //Veri kontrolü içi ekledik.
     ())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter=true); //mevcut yapýdaki validasyonu es geç.
 
