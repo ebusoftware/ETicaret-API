@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Application.Repositories.Abstractions.Storage.Azure
 {
+    //Ortak olmayan sadece Azure a ait özellikler ise burada tanımlanır.
     public interface IAzureStorage:IStorage
     {
     }

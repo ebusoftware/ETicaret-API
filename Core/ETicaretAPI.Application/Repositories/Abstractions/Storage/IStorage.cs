@@ -2,6 +2,7 @@
 
 namespace ETicaretAPI.Application.Abstractions.Storage
 {
+    //Tüm servislerde ortak olanlar burada tanımlanır.
     public interface IStorage
     {
         Task<List<(string fileName, string pathOrContainerName)>> UploadAsync(string pathOrContainerName, IFormFileCollection files);
