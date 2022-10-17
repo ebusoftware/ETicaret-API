@@ -1,15 +1,12 @@
 ﻿using ETicaretAPI.Domain.Entities;
 using ETicaretAPI.Domain.Entities.Common;
+using ETicaretAPI.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ETicaretAPI.Persistence.Contexts
 {
-    public class ETicaretAPIDbContext : DbContext
+    public class ETicaretAPIDbContext : IdentityDbContext<AppUser, AppRole, string>
     {
         public ETicaretAPIDbContext(DbContextOptions options) : base(options)
         { }
@@ -20,6 +17,7 @@ namespace ETicaretAPI.Persistence.Contexts
         public DbSet<Domain.Entities.File> Files { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+
 
         /*insert ve update yapılan tüm dataları elde edip, işlem gerçekleşmeden,
         üzerinde istediğimiz değişikliği yaparız ve SaveChangesAsync methodunu devreye sokarız.*/
