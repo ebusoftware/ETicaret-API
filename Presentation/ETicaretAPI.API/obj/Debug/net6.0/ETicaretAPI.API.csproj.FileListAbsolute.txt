@@ -68,3 +68,8 @@ C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.A
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.pdb
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.genruntimeconfig.cache
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ref\ETicaretAPI.API.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Newtonsoft.Json.dll
