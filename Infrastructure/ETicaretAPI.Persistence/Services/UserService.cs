@@ -1,5 +1,7 @@
 ﻿using ETicaretAPI.Application.Abstractions.Services;
 using ETicaretAPI.Application.DTOs.User;
+using ETicaretAPI.Application.Exceptions;
+using ETicaretAPI.Application.Exceptions.User;
 using ETicaretAPI.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -7,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace ETicaretAPI.Persistence.Services
 {
     public class UserService : IUserService
@@ -17,7 +18,6 @@ namespace ETicaretAPI.Persistence.Services
         {
             _userManager = userManager;
         }
-
         public async Task<CreateUserResponse> CreateAsync(CreateUser model)
         {
             IdentityResult result = await _userManager.CreateAsync(new()
@@ -27,9 +27,7 @@ namespace ETicaretAPI.Persistence.Services
                 Email = model.Email,
                 NameSurname = model.NameSurname,
             }, model.Password);
-
             CreateUserResponse response = new() { Succeeded = result.Succeeded };
-
             if (result.Succeeded)
                 response.Message = "Kullanıcı başarıyla oluşturulmuştur.";
             else
@@ -37,6 +35,18 @@ namespace ETicaretAPI.Persistence.Services
                     response.Message += $"{error.Code} - {error.Description}\n";
 
             return response;
+        }
+
+        public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accessTokenDate, int addOnAccessTokenDate)
+        {
+            if (user != null)
+            {
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessTokenDate);
+                await _userManager.UpdateAsync(user);
+            }
+            else
+                throw new NotFoundUserException();
         }
     }
 }
