@@ -1,4 +1,5 @@
 ﻿using ETicaretAPI.API.Configurations.ColumnWriters;
+using ETicaretAPI.API.Extensions;
 using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators;
 using ETicaretAPI.Infrastructure;
@@ -106,7 +107,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.ConfigureExceptionHandler<Program>(app.Services.GetRequiredService<ILogger<Program>>());//Middleware
 app.UseStaticFiles();
 app.UseSerilogRequestLogging();
 
