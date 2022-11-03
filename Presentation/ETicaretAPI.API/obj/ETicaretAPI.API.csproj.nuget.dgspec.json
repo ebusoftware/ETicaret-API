@@ -336,6 +336,72 @@
         }
       }
     },
+    "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\ETicaretAPI.SignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\ETicaretAPI.SignalR.csproj",
+        "projectName": "ETicaretAPI.SignalR",
+        "projectPath": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\ETicaretAPI.SignalR.csproj",
+        "packagesPath": "C:\\Users\\e3b8u\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\e3b8u\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj": {
+                "projectPath": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -372,6 +438,9 @@
               },
               "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj": {
                 "projectPath": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj"
+              },
+              "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\ETicaretAPI.SignalR.csproj": {
+                "projectPath": "C:\\Users\\e3b8u\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Insfrastructure\\ETicaretAPI.SignalR\\ETicaretAPI.SignalR.csproj"
               }
             }
           }

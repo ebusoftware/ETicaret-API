@@ -86,3 +86,5 @@ C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.A
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Serilog.Sinks.PostgreSQL.dll
 C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SignalR.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SignalR.pdb

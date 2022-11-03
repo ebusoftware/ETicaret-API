@@ -1,0 +1,17 @@
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.SignalR.deps.json
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.SignalR.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.SignalR.pdb
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.Application.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.Domain.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.Application.pdb
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\bin\Debug\net6.0\ETicaretAPI.Domain.pdb
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.csproj.AssemblyReference.cache
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.AssemblyInfoInputs.cache
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.AssemblyInfo.cs
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.csproj.CoreCompileInputs.cache
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.csproj.CopyComplete
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\refint\ETicaretAPI.SignalR.dll
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ETicaretAPI.SignalR.pdb
+C:\Users\e3b8u\Desktop\ETicaretUygulamasi\ETicaretAPI\Insfrastructure\ETicaretAPI.SignalR\obj\Debug\net6.0\ref\ETicaretAPI.SignalR.dll
