@@ -9,6 +9,6 @@ namespace ETicaretAPI.Domain.Entities
         public string Path { get; set; }
         public string Storage { get; set; }
         [NotMapped]
-        public override DateTime UpdateDate { get => base.UpdateDate; set => base.UpdateDate = value; }
+        public override DateTime UpdatedDate { get => base.UpdatedDate; set => base.UpdatedDate = value; }
     }
 }

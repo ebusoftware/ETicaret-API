@@ -31,8 +31,8 @@ namespace ETicaretAPI.Persistence.Contexts
             {
                 _ = data.State switch
                 {
-                    EntityState.Added => data.Entity.CreateDate = DateTime.UtcNow,
-                    EntityState.Modified => data.Entity.UpdateDate=DateTime.UtcNow,
+                    EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdatedDate=DateTime.UtcNow,
                     _ => DateTime.UtcNow
 
 
