@@ -17,6 +17,21 @@ namespace ETicaretAPI.Persistence.Contexts
         public DbSet<Domain.Entities.File> Files { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder) //basket ile order arasında bire-bir ilişki belirttik.
+        {
+            builder.Entity<Order>()
+                .HasKey(b => b.Id);
+
+            builder.Entity<Basket>()
+                .HasOne(b => b.Order)
+                .WithOne(o => o.Basket)
+                .HasForeignKey<Order>(b => b.Id);
+
+            base.OnModelCreating(builder);
+        }
 
 
         /*insert ve update yapılan tüm dataları elde edip, işlem gerçekleşmeden,
